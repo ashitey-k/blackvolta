@@ -1,0 +1,189 @@
+body{
+    transition: all 0.3s ease-in 2s;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+.logo{
+    height: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.links{
+    transition: all 0.3s ease  0s;   
+    border-bottom: 2px solid white;
+}
+.links:hover{
+    color: brown;
+}
+li, a, button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+
+}
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navlinks li a{
+    transition: all 0.3s ease  0s;
+}
+.navlinks a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.navlinks li a:hover{
+    color: brown;
+}
+a:hover{
+    color: brown;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136,169,0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+button:hover{
+    background-color: rgba(0, 136,169,0.8);
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .navlinks{
+        position: absolute;
+        right: 0px;
+        height: 500px;
+        top: 12vh;
+        background-color: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        cursor: pointer;
+
+    }
+    .navlinks li {
+        opacity: 1;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+.nav-active{
+    transform: translateX(0% );
+}
+
+.heading{
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.description{
+    color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+    justify-content: space-around;
+    margin: 10px;
+    font-weight: 800 bolder;
+}
+.card{
+    background-color: whitesmoke;
+    width: 30%;
+    box-shadow: 5px 5px 20px;
+    height: 7cm;
+}
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.cont img{
+    width: 100%;
+}
+.info{
+    text-align: center;
+}
+h5{
+    background-color: whitesmoke;
+    font-weight: 250;
+}
+h3{
+    background-color: whitesmoke;
+    font-weight: bold 100;
+}
+h2{
+    background-color: whitesmoke;
+    font-weight: 500;
+}
+.hotels{
+    margin-top: 300px;
+}
+.location a{
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: solid 2px black;
+    font-weight: bold 100;
+}
+.location a:hover{
+    cursor: pointer;
+}
+.site a{
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+
+
+
